@@ -61,7 +61,7 @@ int index = 0;
 string *find;
 while ( index < numBooks )
 {
-	find = strstr ( array[index] , userInput);
+	find = strstr ( titles[index] , userInput);
 
 	// If the substring is found
 	if (find)
