@@ -6,6 +6,7 @@
 using namespace std;
 
 const int numBooks = 20;
+int SearchString (const array <string, numBooks> &titles, const userInput );
 
 int main(){
 	int main(){
@@ -23,6 +24,7 @@ int main(){
 						"Digital Computer Electronics", "Assembly Language for x86 Processors (7th Edition)"};
 	char choice;
 	string toSearch;
+	int result;
 		
 	do {
 	cout << "*****************A5*****************\n";
@@ -36,9 +38,38 @@ int main(){
 	cin >> toSearch;
 
 		// Pass the string to the function to look up for it
+		result = SearchString ( bookTitle, toSearch );
+
+		if (result != -1 )
+		{
+			cout << "The string " << toSearch << " is found ..\n";
+			cout << bookTitle[result] << endl;
+		}
+			
+		else if 
+		{
+			cout << "The string " << toSearch << " is NOT found ..\n";
+		}
 		
 	}
 	while (choice != 'Q')
 
 return 0;
+}
+
+int SearchString (const array <string, numBooks> &titles, const userInput )
+{
+int index = 0;
+string *find;
+while ( index < numBooks )
+{
+	find = strstr ( array[index] , toFind);
+
+	// If the substring is found
+	if (find)
+		return index;
+}
+
+// if the string is not found return a sentinel value;
+return -1;
 }
