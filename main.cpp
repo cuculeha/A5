@@ -6,7 +6,7 @@
 using namespace std;
 
 const int numBooks = 20;
-int SearchString (const array <string, numBooks> &titles, const userInput );
+int SearchString (const array <string, numBooks> &titles, const string userInput );
 
 int main(){
 	array < string, numBooks > bookTitle {"Star Wars", "The Empire Strikes Back (Star Wars)",
@@ -56,7 +56,7 @@ int main(){
 return 0;
 }
 
-int SearchString (const array <string, numBooks> &titles, const userInput )
+int SearchString (const array <string, numBooks> &titles, const string userInput )
 {
 int index = 0;
 string *find;
