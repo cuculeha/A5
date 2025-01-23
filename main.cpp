@@ -1,7 +1,6 @@
 #include <iostream>
-#include <iomanip>
 #include <array>
-#include <string>
+#include <cstring>
 
 using namespace std;
 
@@ -51,7 +50,7 @@ int main(){
 		}
 		
 	}
-	while (choice != 'Q')
+	while (choice != 'Q');
 
 return 0;
 }
@@ -62,7 +61,7 @@ int index = 0;
 string *find;
 while ( index < numBooks )
 {
-	find = strstr ( array[index] , toFind);
+	find = strstr ( array[index] , userInput);
 
 	// If the substring is found
 	if (find)
