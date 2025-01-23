@@ -9,7 +9,6 @@ const int numBooks = 20;
 int SearchString (const array <string, numBooks> &titles, const userInput );
 
 int main(){
-	int main(){
 	array < string, numBooks > bookTitle {"Star Wars", "The Empire Strikes Back (Star Wars)",
 						"Splinter of the Mind's Eye (Star Wars)", "Return of the Jedi (Star Wars)",
 						"Heir to the Empire (Star Wars: The Thrawn Trilogy, Vol. 1)", 
