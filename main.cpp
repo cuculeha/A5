@@ -64,7 +64,10 @@ while ( index < numBooks )
 {
 	// If the substring is found
 	if (titles[index].find (userInput) != string::npos )
+	{
 		return index;
+	}
+	index++;
 }
 
 // if the string is not found return a sentinel value;
