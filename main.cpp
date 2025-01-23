@@ -60,7 +60,6 @@ return 0;
 int SearchString (const array <string, numBooks> &titles, const string userInput )
 {
 int index = 0;
-string *find;
 while ( index < numBooks )
 {
 	// If the substring is found
