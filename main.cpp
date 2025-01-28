@@ -61,7 +61,7 @@ int main(){
 		}
 	}
 
-	else if
+	else
 	{	
 		cout << "Program quitted\n";
 	}
