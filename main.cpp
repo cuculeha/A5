@@ -41,8 +41,8 @@ int main(){
 
 	if ( toupper(choice) == 'S')
 	{
-		cout << "Enter the book title you would like to seaarch for\n";
-		cout << "Do seacrh for exact title; use uppercase when possible\n";
+		cout << "Enter the book title you would like to seaarch for.\n";
+		cout << "Do seacrh for exact title; use uppercase when possible.\n";
 		cin.ignore();
 		getline(cin, toSearch);
 
@@ -67,7 +67,7 @@ int main(){
 	}
 	}
 		
-	while (toupper(choice) == 'Q');
+	while (toupper(choice) != 'Q');
 
 return 0;
 }
