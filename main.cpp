@@ -51,7 +51,7 @@ int main(){
 
 		if (result != -1 )
 		{
-			cout << "The string " << toSearch << " is found ..\n";
+			cout << "The keyword " << toSearch << " is found ..\n";
 			cout << bookTitle[result] << endl;
 		}
 			
