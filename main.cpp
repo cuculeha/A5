@@ -54,7 +54,7 @@ int main(){
 		{
 			cout << "___________Search Results_____________\n";
 			cout << "The keyword : " << toSearch << endl;
-			cout << "Index  : " << result + 1 << endl;
+			cout << "Index  : " << result << endl;
 			cout << "Title  : " << bookTitle[result] << endl;
 			cout << "______________________________________\n";
 		}
