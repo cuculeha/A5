@@ -66,9 +66,9 @@ int main(){
 			
 		else
 		{
-			cout << "______Book Title Not Found______\n";
+			cout << "______Key word Not Found______\n";
 			cout << "The keyword : " << toSearch << endl;
-			cout << "Keyword NOT FOUND\n";
+			cout << "Book Title NOT FOUND\n";
 		}
 	}
 
