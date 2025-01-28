@@ -1,3 +1,8 @@
+// Author      : Saliha Babar
+// Assignment  : A5
+// Due Date    : 01/28/2025
+// Purpose     : Linear Search
+
 #include <iostream>
 #include <array>
 #include <cstring>
