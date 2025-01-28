@@ -56,7 +56,7 @@ int main(){
 			cout << "The keyword : " << toSearch << endl;
 			cout << "Index  : " << result + 1 << endl;
 			cout << "Title  : " << bookTitle[result] << endl;
-			cout << "______________________________________\n"
+			cout << "______________________________________\n";
 		}
 			
 		else
