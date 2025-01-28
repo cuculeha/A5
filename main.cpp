@@ -27,8 +27,8 @@ int main(){
 		
 	do {
 	cout << "*****************A5*****************\n";
-	cout << " Enter following options \n";
-	cout << " S - Search for book Titles\n";
+	cout << " What would you like to do ? \n";
+	cout << " S - Search for a book titles\n";
 	cout << " Q - Quit. Program exits\n";
 	cout << " Enter your choice\n";
 	cout << "************************************\n";
