@@ -43,7 +43,7 @@ int main(){
 	if ( toupper(choice) == 'S')
 	{
 		cout << "Enter the book title you would like to seaarch for.\n";
-		cout << "Do seacrh for exact title; use uppercase when possible.\n";
+		cout << "Do search for exact title; use uppercase when possible.\n";
 		cin.ignore();
 		getline(cin, toSearch);
 
