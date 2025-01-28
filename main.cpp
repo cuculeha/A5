@@ -31,6 +31,7 @@ int main(){
 	cout << " S - Search for book Titles\n";
 	cout << " Q - Quit. Program exits\n";
 	cout << " Enter your choice\n";
+	cout << "************************************\n";
 	cin >> choice;
 	
 	while ( toupper(choice) != 'S' && toupper(choice) != 'Q')
@@ -51,14 +52,18 @@ int main(){
 
 		if (result != -1 )
 		{
-			cout << "The keyword " << toSearch << " is found ..\n";
-			cout << bookTitle[result] << endl;
+			cout << "___________Search Results_____________";
+			cout << "The keyword : " << toSearch << endl;
+			cout << "Index  : " << result + 1 << endl;
+			cout << "Title  : " << bookTitle[result] << endl;
+			cout << "______________________________________\n"
 		}
 			
 		else
 		{
-			cout << "The string " << toSearch << " is NOT found ..\n";
-		}
+			cout << "______Book Title Not Found______";
+			cout << "The keyword : " << toSearch << endl;
+			cout << "Keyword NOT FOUND\n";
 	}
 
 	else
