@@ -29,7 +29,7 @@ int main(){
 	cout << "*****************A5*****************\n";
 	cout << " Enter following options \n";
 	cout << " S - Search for book Titles\n";
-	cout << " Q - Quit\n";
+	cout << " Q - Quit. Program exits\n";
 	cout << " Enter your choice\n";
 	cin >> choice;
 	
@@ -61,12 +61,13 @@ int main(){
 		}
 	}
 
-	else
+	else if
 	{	
 		cout << "Program quitted\n";
 	}
 	}
-	while (choice != 'Q');
+		
+	while (toupper(choice) == 'Q');
 
 return 0;
 }
