@@ -52,7 +52,7 @@ int main(){
 
 		if (result != -1 )
 		{
-			cout << "___________Search Results_____________";
+			cout << "___________Search Results_____________\n";
 			cout << "The keyword : " << toSearch << endl;
 			cout << "Index  : " << result + 1 << endl;
 			cout << "Title  : " << bookTitle[result] << endl;
@@ -61,7 +61,7 @@ int main(){
 			
 		else
 		{
-			cout << "______Book Title Not Found______";
+			cout << "______Book Title Not Found______\n";
 			cout << "The keyword : " << toSearch << endl;
 			cout << "Keyword NOT FOUND\n";
 		}
