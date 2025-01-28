@@ -41,11 +41,10 @@ int main(){
 
 	if ( toupper(choice) == 'S')
 	{
-	cout << "Enter the book title you would like to seaarch for\n";
-	cout << "Do seacrh for exact title; use uppercase when possible\n";
-	cin.ignore();
-	getline(cin, toSearch);
-
+		cout << "Enter the book title you would like to seaarch for\n";
+		cout << "Do seacrh for exact title; use uppercase when possible\n";
+		cin.ignore();
+		getline(cin, toSearch);
 
 		// Pass the string to the function to look up for it
 		result = SearchString ( bookTitle, toSearch );
@@ -60,15 +59,13 @@ int main(){
 		{
 			cout << "The string " << toSearch << " is NOT found ..\n";
 		}
-		
-	}
 	}
 
 	else
 	{	
 		cout << "Program quitted\n";
 	}
-
+	}
 	while (choice != 'Q');
 
 return 0;
