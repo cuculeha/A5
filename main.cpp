@@ -1,6 +1,7 @@
 #include <iostream>
 #include <array>
 #include <cstring>
+#include <cctype>
 
 using namespace std;
 
@@ -31,8 +32,17 @@ int main(){
 	cout << " Q - Quit\n";
 	cout << " Enter your choice\n";
 	cin >> choice;
+	
+	while ( toupper(choice) != 'S' && toupper(choice) != 'Q')
+	{
+		cout << choice << " is invalid. Reenter your choice again\n.";
+		cin >> choice;
+	}
 
+	if ( toupper(choice) == 'S')
+	{
 	cout << "Enter the book title you would like to seaarch for\n";
+	cout << "Do seacrh for exact title; use uppercase when possible\n";
 	cin.ignore();
 	getline(cin, toSearch);
 
@@ -52,6 +62,13 @@ int main(){
 		}
 		
 	}
+	}
+
+	else
+	{	
+		cout << "Program quitted\n";
+	}
+
 	while (choice != 'Q');
 
 return 0;
