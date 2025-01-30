@@ -31,12 +31,13 @@ int main(){
 	int result;
 		
 	do {
-	cout << "*****************A5*****************\n";
-	cout << " What would you like to do ? \n";
-	cout << " S - Search for a book titles\n";
-	cout << " Q - Quit. Program exits\n";
-	cout << " Enter your choice\n";
 	cout << "************************************\n";
+	cout << "A5 : Linear Search                 *\n";
+	cout << "************************************\n";
+	cout << " <S>earch                          *\n";
+	cout << " <Q>uit.                           *\n";
+	cout << "************************************\n";
+	cout << " * CHOICE ( S or Q ) : ";
 	cin >> choice;
 	
 	while ( toupper(choice) != 'S' && toupper(choice) != 'Q')
@@ -58,7 +59,7 @@ int main(){
 		if (result != -1 )
 		{
 			cout << "___________Search Results_____________\n";
-			cout << "The keyword : " << toSearch << endl;
+			cout << "Search : " << toSearch << endl;
 			cout << "Index  : " << result << endl;
 			cout << "Title  : " << bookTitle[result] << endl;
 			cout << "______________________________________\n";
@@ -67,7 +68,7 @@ int main(){
 		else
 		{
 			cout << "______Key word Not Found______\n";
-			cout << "The keyword : " << toSearch << endl;
+			cout << "Search : " << toSearch << endl;
 			cout << "Book Title NOT FOUND\n";
 		}
 	}
